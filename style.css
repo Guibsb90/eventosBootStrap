@@ -2,12 +2,12 @@ body{
   font-family: Roboto, sans-serif;
 }
 .navbar{
-  background-color: #e15f41;
+  background-color: #8c1313;
 }
 
 #cabecalho .nav .nav-link.active{
   background-color: #fff;
-  color:#e15f41 ;
+  color:#8c1313 ;
 
 }
 
@@ -29,16 +29,21 @@ body{
 }
 
 .text-colored{
-  color:#e15f41
+  color:#8c1313
 }
 .nav-cardapio .nav-link.active,
 #fale-conosco button{
 
-  background-color: #e15f41 ;
+  background-color: #8c1313 ;
+  color: #fff;
+}
+#fale-conosco input,
+#fale-conosco textarea{
+  background-color: #f47b7b;
   color: #fff;
 }
 .nav-cardapio .nav-link:hover{
-  color: #e15f41;
+  color: #8c1313;
 }
 .social-links li {
   list-style: none;
@@ -49,16 +54,41 @@ body{
   text-decoration: none;
 }
 footer{
-  background-color: #e15f41;
+  background-color:#8c1313;
   color: beige;
   padding: 16px 0;
   font-weight: bold;
   padding-left: 36%;
 }
 
-@media (max-widith: 767px) {
+.espacamento{
+  margin-top: 15px;
+}
+@media (max-widtth: 767px) {
   carousel-item img{
     height: 280px;
   }
+  #responsivo {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    
+  }
 
+}
+@media screen and (min-width: 768px)and (max-width: 1023px){
+  carousel-item img{
+    height: 280px;
+  }
+  #responsivo{
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+  }
+  #fale-conosco button{
+    margin-top: 10px;
+  }
 }
